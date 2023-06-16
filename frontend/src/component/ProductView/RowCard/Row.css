@@ -1,0 +1,9 @@
+.row-container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;    
+    gap: 50px;
+    flex-wrap: wrap;
+}

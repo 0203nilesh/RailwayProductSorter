@@ -1,0 +1,44 @@
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color:  black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    border: 2px solid black;
+  }
+  
+  /* .Btn::before {
+    position: absolute;
+    content: "Add Item";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+   */
+  .Btn:hover {
+    color: rgb(251, 251, 251);
+    background-position: right;
+    transition-duration: 0.5s;
+  }
+  
+  .Btn:active {
+    transform: scale(0.95);
+  }

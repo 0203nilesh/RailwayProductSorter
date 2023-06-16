@@ -1,0 +1,47 @@
+.filter-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    /* border: 2px solid white; */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.filter-container> .filter-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-container> .category> select{
+    box-shadow: 1px 1px 5px #ff47a3;
+    border-bottom: none;
+    cursor: pointer;
+}
+.filter-container > .other-property> div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.filter-container> .other-property > div > label, input{
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+}
+.filter-container> .other-property > div >  input:hover{
+    box-shadow: 1px 1px 5px #ff47a3;
+}
+.filter-container> .other-property > div > label:focus, input:focus{
+    background-color: #313131;
+    outline: none;
+}
+.filter-container> .other-property > div > input{
+    height: fit-content;
+    padding: 3px;
+    border-top: none;
+    border-left: none;
+}

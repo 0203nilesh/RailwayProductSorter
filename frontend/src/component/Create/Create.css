@@ -1,0 +1,136 @@
+.create-container{
+    width: 50%;
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid rgba(105, 105, 105, 0.479);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    gap: 20px;
+}
+.create-container:hover{
+    box-shadow: 1px 1px 5px #ff47a3;
+}
+.create-container .heading{
+    display: flex;
+    justify-content: center;
+}
+.create-container .heading>p{
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffc8e3;
+    /* transition: all 0.2s ; */
+}
+
+.create-container .heading>p:hover{
+    color: #ff9fcd;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+
+.create-container > .category{
+    display: grid;
+    grid: 45%/ auto auto;   
+}
+.create-container> .create-child{
+    display: grid;
+    grid-gap: 10px;
+    width: 60%;
+}
+.create-container> .category> label, select{
+    height: fit-content;
+    padding: 4px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+}
+.create-container> .category > select {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #ffeaf5;
+    outline: none;
+    border-bottom: none;
+    /* box-shadow: 1px 1px 5px #ff47a3; */
+}
+.create-container> .category > select > option {
+    /* box-shadow: 1px 1px 5px #ff47a3; */
+    cursor: pointer;
+    outline: none;
+    border-bottom: none;
+    /* box-shadow: 1px 1px 5px #ff47a3; */
+}
+.create-container> .category> select:hover{
+    box-shadow: 1px 1px 5px #ff47a3;
+    border-color: #ff47a3;
+}
+.create-container .create-child > div{
+    display: grid;
+    grid: 45%/ auto auto;
+    grid-gap: 5px;
+}
+.create-container .create-child > div input ,label, textarea {
+    padding: 4px;
+    font-size: 19px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: fit-content;
+    outline: none;
+    /* box-shadow: 1px 1px 5px #ff47a3; */
+}
+/* .create-container .create-child > div input, textarea{
+    border-color:  #ff47a3;
+} */
+.create-container .create-child > div input:hover, textarea:hover{
+    box-shadow: 1px 1px 5px #ff47a3;
+}
+.create-container .create-child > div input:focus, textarea:focus{
+   outline: 1px 1px 5px #ff47a3;
+   background-color: black;
+}
+.create-container .create-child > div input, textarea{
+    color: white;
+    background-color: black;
+    border-top: none;
+    cursor: pointer;
+    border-left: none;
+}
+.create-container .create-child> input ,select{
+    background-color: black;
+    color: white;
+    border-top: none;
+    border-radius: 10px;
+    /* padding: 3px; */
+    border-bottom: none;
+    /* border-left: 2px solid white; */
+    border-bottom: 2px solid white;
+}
+.create-container .create-child> div> input[type="date"]{
+    cursor:default;
+}
+.create-container .create-child> div> input[type="date"]::-webkit-calendar-picker-indicator{
+    background-color: white;
+    content: "hi";
+    cursor: pointer;
+    /* display: none; */
+}
+
+/* .create-container .button{
+    width: fit-content;
+    display: block !important;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+} */
+/* .create-child .button .create-button{
+    height: fit-content;
+    font-size: 20px;
+} */
+input[type=number]::-webkit-inner-button, 
+input[type=number]::-webkit-outer-spin-button{ 
+    cursor: pointer;
+    border-radius: 20px;
+}

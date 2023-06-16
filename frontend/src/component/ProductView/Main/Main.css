@@ -1,0 +1,14 @@
+.product-main-container{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    color: white;
+}
+.product-main-container> .display-card-container{
+    margin-top: 50px;
+}

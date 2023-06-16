@@ -1,0 +1,104 @@
+.card {
+    width: 280px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    box-shadow: 0px 0px 30px 1px rgba(107, 107, 107, 0.3);
+    height: 390px;
+   }
+   
+   .card2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 5px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+   .card> .card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    }
+
+   .card> .card2 > .card2-child{
+        padding: 10px;
+   }
+
+    .card> .card2 > .category{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card> .card2> .specific-property{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card> .card2> .specific-property> p{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card> .card2> .specific-property> p>span{
+        font-size: 16px;
+    }
+    .card> .card2 > .common-property{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .card> .card2> .common-property> .details> p{
+        text-align: justify;
+        font-size: 16px;
+    }
+    .card> .card2 > .common-property> .others{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card> .card2> .common-property> .others> p{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card> .card2> .common-property> .others> p> span{
+        font-size: 16px;
+    }
+    .company{
+        padding: 7px;
+        font-size:17px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 3px #322d47;
+        color: white;
+    }
+    .company:hover{
+        box-shadow: 0px 0px 3px 3px #74fece;
+        cursor: pointer;
+    }
+    .value{
+        position: relative;
+        float: right;
+        margin-left: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 1px 1px rgb(133, 125, 125);
+    }
+    .value:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 1px 1px rgb(255, 153, 153);
+    }
